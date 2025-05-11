@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solicitar Cita Médica</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #e3f2fd;
+            padding: 40px;
+        }
+        .formulario {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #0288d1;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <h2>Solicitá tu cita médica</h2>
+        <form>
+            <label>Nombre completo:</label>
+            <input type="text" required>
+
+            <label>Especialidad:</label>
+            <select required>
+                <option>Clínica general</option>
+                <option>Cardiología</option>
+                <option>Odontología</option>
+                <option>Pediatría</option>
+            </select>
+
+            <label>Fecha deseada:</label>
+            <input type="date" required>
+
+            <button type="submit">Solicitar cita</button>
+        </form>
+    </div>
+</body>
+</html>
